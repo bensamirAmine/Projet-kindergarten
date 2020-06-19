@@ -1,107 +1,116 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-#include "parent.h"
-#include"reclamation.h"
-#include <QMessageBox>
-#include <QComboBox>
-#include <QTextStream>
-#include <QPixmap>
-#include <QDebug>
-#include"QMessageBox"
-#include<QPropertyAnimation>
-#include<random>
-#include"QPainter"
-#include"QFont"
-#include"QPen"
-#include"QPdfWriter"
-#include"QTextDocumentWriter"
-#include"QDesktopServices"
-#include"QtPrintSupport/QPrinter"
-#include <QPropertyAnimation>
-#include <QTableWidget>
-#include <QFile>
-#include <popup.h>
-#include <QSqlError>
-#include <QtWidgets/QGridLayout>
+
 #include <QMainWindow>
-QT_BEGIN_NAMESPACE
-namespace Ui { class MainWindow; }
-QT_END_NAMESPACE
+
+namespace Ui {
+class MainWindow;
+}
 
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
+    explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
 private slots:
-    //void on_pushButton_12_clicked();
-    void initialiser();
-    void initialiser_reclamation();
+    void on_btnAddIns_clicked();
 
-    void on_pushButton_3_clicked();
+    void on_btnEditConfirm_clicked();
 
-    void on_pushButton_2_clicked();
+    void on_btnEditIns_clicked();
 
-    //void on_pushButton_clicked();
+    void on_btnDeleteIns_clicked();
 
-   // void on_pb_supprimer_clicked();
+    void on_btnInst_clicked();
 
-    void on_pushButton_4_clicked();
+    void on_btnInst_2_clicked();
 
-  //  void on_pushButton_16_clicked();
+    void on_btnInst_3_clicked();
 
-    //void on_pushButton_8_clicked();
+    void on_btnInst_4_clicked();
 
-    //void on_pushButton_9_clicked();
+    void on_btnInst_5_clicked();
 
-    //void on_pushButton_11_clicked();
+    void on_btnInst_6_clicked();
 
-    void on_pushButton_13_clicked();
+    void on_btnInst_7_clicked();
+
+    void on_btnInst_8_clicked();
+
+    void on_btnResp_5_clicked();
+
+    void on_btnResp_6_clicked();
+
+    void on_btnResp_7_clicked();
+
+    void on_btnResp_8_clicked();
+
+    void on_btnResp_clicked();
+
+    void on_btnResp_2_clicked();
+
+    void on_btnResp_3_clicked();
+
+    void on_btnResp_4_clicked();
+
+    void on_btnAddIns_2_clicked();
+
+    void on_pushButton_edit_2_clicked();
+
+    void on_pB_delete_clicked();
+
+    void on_btnAddResp_3_clicked();
+
+    void on_btnEditConfirm_2_clicked();
+
+    void on_pushButton_edit_3_clicked();
+
+    void on_pB_delete_2_clicked();
+
+    void on_btnAddResp_clicked();
+
+    void on_btnEditResp_clicked();
+
+    void on_btnDeleteResp_clicked();
+
+    void on_btnPdfMenu_clicked();
+
+    void on_btnPdfMenu_6_clicked();
+
+    void on_lineEditEditRespMail_2_textChanged(const QString &arg1);
+
+    void on_lineEditAddInsMail_textChanged(const QString &arg1);
+
+    void on_lineEditAddInsMail_selectionChanged();
+
+    void on_lineEditAddInsMail_editingFinished();
+
+    void on_lineEditAddIRespMail_2_cursorPositionChanged(int arg1, int arg2);
+
+    void on_pB_login_clicked();
 
 
-    void on_pb_supprimer_2_clicked();
+    void on_lineEditRechIns_textChanged(const QString &arg1);
 
-    void on_radioButton_3_clicked();
+    void on_lineEditRechResp_textChanged(const QString &arg1);
 
-    void on_radioButton_4_clicked();
+    void on_triResp_clicked();
 
-    void on_pushButton_17_clicked();
+    void on_triInst_clicked();
 
-    void on_tabparent_activated(const QModelIndex &index);
+    void on_triInst_2_clicked();
 
-    void on_pushButton_5_clicked();
+    void on_triResp_2_clicked();
 
-    void on_pushButton_18_clicked();
+    void on_pushButtonAdminHomeIns_clicked();
 
-    void on_pushButton_12_clicked();
-
-    void on_radioButton_19_clicked();
-
-    void on_radioButton_20_clicked();
-
-    void on_pushButton_10_clicked();
-
-    void on_pushButton_19_clicked();
-
-   // void on_num_2_cursorPositionChanged(int arg1, int arg2);
-
-    void on_tablereclamation_2_activated(const QModelIndex &index);
-
-
-    void on_pushButton_clicked();
-
-    void on_pushButton_6_clicked();
+    void on_home_clicked();
 
 private:
     Ui::MainWindow *ui;
-
-    Parent tmpparent;
-    Parent p ;
-    Reclamation r ;
-    Reclamation tmpreclamation;
-          PopUp *popUp;
 };
+
 #endif // MAINWINDOW_H

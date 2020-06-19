@@ -1,5 +1,6 @@
 #ifndef CONNEXION_H
 #define CONNEXION_H
+
 #include <QSqlDatabase>
 
 class Connexion
@@ -12,7 +13,4 @@ public:
     void fermerConnexion();
 
 };
-
-
-
 #endif // CONNEXION_H
